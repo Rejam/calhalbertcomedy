@@ -7,7 +7,19 @@ const Contact = () => (
   <Layout>
     <h1>Drop us a Message!</h1>
     <section>
-      <form className={style.form} action="">
+      <form
+        className={style.form}
+        name="messages"
+        action=""
+        method="POST"
+        netlify-honeypot="hpfield"
+        netlify
+      >
+        <div className={style.hpot}>
+          <label>
+            Leave this field empty: <input name="hpfield" />
+          </label>
+        </div>
         <div>
           <label className={style.label} htmlFor="name">
             Name
