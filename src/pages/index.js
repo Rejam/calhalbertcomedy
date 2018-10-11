@@ -1,19 +1,30 @@
 import React from 'react'
 import Img from 'gatsby-image'
-
 import Layout from '../components/layout'
+
+import styles from '../css/index.module.css'
 
 export default ({ data }) => (
   <Layout>
     <header>
-      <Img fluid={data.poseImage.childImageSharp.fluid} />
-      <h1>Cal Halbert</h1>
-      <h2>One of the UK's Top All Round Entertainers</h2>
-      <button>Book Cal Now</button>
+      <Img
+        imgStyle={{ objectPosition: '50% 25%' }}
+        className={styles.heroImg}
+        fluid={data.heroImage.childImageSharp.fluid}
+        alt="Cal Halbert holding a microphone"
+      />
+      <div className={styles.heroInfo}>
+        <h1 className={styles.caption}>Cal Halbert</h1>
+        <h2 className={styles.subCaption}>
+          One of the UK's Top All Round Entertainers
+        </h2>
+        <button>Book Cal Now</button>
+      </div>
     </header>
+    <h1>About Cal Halbert</h1>
     <section className="about">
-      <h1>About Cal Halbert</h1>
       <article>
+        <Img fluid={data.entertainer.childImageSharp.fluid} />
         <h2>A Versatile Entertainer</h2>
         <p>
           Impressionist, Comedian, Actor, Host and Voice Over Artiste — Cal
@@ -22,9 +33,9 @@ export default ({ data }) => (
           four yeses accompanied by a standing ovation by the judges, audience
           and Ant and Dec.
         </p>
-        <img src="ch_taxi.jpg" alt="" />
       </article>
       <article>
+        <Img fluid={data.taxi.childImageSharp.fluid} />
         <h2>A Proven Track Record</h2>
         <p>
           Maybe you are looking for an entertainer for a birthday party or
@@ -35,9 +46,9 @@ export default ({ data }) => (
           entertainment is sure to bring — not just fun — but professionalism
           and experience to your event.
         </p>
-        <img src="ch_cabaret.jpg" alt="" />
       </article>
       <article>
+        <Img fluid={data.cabaret.childImageSharp.fluid} />
         <h2>Charity Work</h2>
         <p>
           Cal tries to do as much as he can for charity but as you can imagine
@@ -50,7 +61,8 @@ export default ({ data }) => (
       </article>
     </section>
     <section className="testimonials">
-      <img src="mm_gbt.jpg" alt="" />
+      <h1>Testimonials</h1>
+      <Img fluid={data.bgt.childImageSharp.fluid} />
       <div>
         <cite>David Walliams - Author, Actor, Presenter</cite>
         <blockquote>
@@ -58,7 +70,7 @@ export default ({ data }) => (
           seen be done before - You guys are brilliant''
         </blockquote>
       </div>
-      <img src="ch_studio.jpg" alt="" />
+      <Img fluid={data.studio.childImageSharp.fluid} />
       <div>
         <cite>Elliot Clarke - MD at Clear and Loud PA Hire</cite>
         <blockquote>
@@ -89,12 +101,23 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    poseImage: file(relativePath: { eq: "ch_pose.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+    heroImage: file(relativePath: { regex: "/pose_with_mic/" }) {
+      ...fluidImage
+    }
+    entertainer: file(relativePath: { regex: "/pose_with_hands/" }) {
+      ...fluidImage
+    }
+    taxi: file(relativePath: { regex: "/in_taxi/" }) {
+      ...fluidImage
+    }
+    cabaret: file(relativePath: { regex: "/for_charity/" }) {
+      ...fluidImage
+    }
+    bgt: file(relativePath: { regex: "/mimic_men/" }) {
+      ...fluidImage
+    }
+    studio: file(relativePath: { regex: "/at_studio/" }) {
+      ...fluidImage
     }
   }
 `

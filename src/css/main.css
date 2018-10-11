@@ -1,0 +1,58 @@
+html {
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+* {
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #333;
+  background-color: white;
+}
+
+section {
+  padding: 2em 1em 0 1em;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: 'Squada One', Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.3em;
+  letter-spacing: -0.05em;
+}
+
+p {
+  line-height: 140%;
+}
+
+img {
+}
+a {
+  color: #339;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom: 1px solid #339;
+}
+
+button {
+  font-family: 'Squada One', Helvetica, sans-serif;
+  background: #fff;
+  color: #333;
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}

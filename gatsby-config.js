@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cal Halbert - One Of The Top All Round Entertainers',
+    title: 'Cal Halbert',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

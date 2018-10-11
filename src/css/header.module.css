@@ -1,0 +1,19 @@
+.heading {
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+  font-size: 2em;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+}
+
+.nav > a {
+  margin: 0 1em;
+  flex: 0 1 15%;
+  white-space: nowrap;
+}

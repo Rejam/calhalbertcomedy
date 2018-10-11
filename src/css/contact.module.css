@@ -1,0 +1,7 @@
+.form,
+.input,
+.label,
+.message {
+  width: 100%;
+  display: block;
+}

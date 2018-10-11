@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import '../css/main.css'
+import styles from '../css/layout.module.css'
 import Header from './header'
 import Footer from './footer'
 
@@ -22,13 +24,17 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={({ site }) => (
       <>
-        <Helmet title={data.site.siteMetadata.title} meta={meta}>
+        <Helmet title={site.siteMetadata.title} meta={meta}>
           <html lang="en" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Lato|Squada+One"
+            rel="stylesheet"
+          />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
+        <Header siteTitle={site.siteMetadata.title} />
+        <div className={styles.layout}>{children}</div>
         <Footer />
       </>
     )}
