@@ -21,40 +21,40 @@ const Contact = () => (
         </div>
         <div>
           <label className={style.label} htmlFor="name">
-            Name
+            Name:
+            <input
+              className={style.input}
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Name"
+            />
           </label>
-          <input
-            className={style.input}
-            name="name"
-            id="name"
-            type="text"
-            placeholder="Name"
-          />
         </div>
         <div>
           <label className={style.label} htmlFor="email">
-            Email
+            Email:
+            <input
+              className={style.input}
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
           </label>
-          <input
-            className={style.input}
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Email"
-            required
-          />
         </div>
         <div>
           <label className={style.label} htmlFor="message">
-            Message
+            Message:
+            <textarea
+              className={style.message}
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            />
           </label>
-          <textarea
-            className={style.message}
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-          />
         </div>
         <button type="submit">Send</button>
       </form>
