@@ -10,7 +10,6 @@ const Contact = () => (
       <form
         className={style.form}
         name="messages"
-        action=""
         method="POST"
         netlify-honeypot="hpfield"
         netlify
@@ -26,6 +25,7 @@ const Contact = () => (
           </label>
           <input
             className={style.input}
+            name="name"
             id="name"
             type="text"
             placeholder="Name"
@@ -37,6 +37,7 @@ const Contact = () => (
           </label>
           <input
             className={style.input}
+            name="email"
             id="email"
             type="email"
             placeholder="Email"
@@ -55,7 +56,7 @@ const Contact = () => (
             rows="10"
           />
         </div>
-        <button>Send</button>
+        <button type="submit">Send</button>
       </form>
     </section>
   </Layout>
