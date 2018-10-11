@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 
-const IndexPage = () => (
+export default ({ data }) => (
   <Layout>
     <header>
-      <img src="ch_face.jpg" alt="" />
+      <Img fluid={data.poseImage.childImageSharp.fluid} />
       <h1>Cal Halbert</h1>
       <h2>One of the UK's Top All Round Entertainers</h2>
       <button>Book Cal Now</button>
@@ -87,4 +87,14 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export const query = graphql`
+  query {
+    poseImage: file(relativePath: { eq: "ch_pose.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
