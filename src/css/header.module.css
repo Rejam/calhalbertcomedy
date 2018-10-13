@@ -42,24 +42,27 @@
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: calc(100vh - 4em);
+  opacity: 1;
   transform: translateX(0);
   transition: height 300ms ease-in-out, opacity 300ms ease-in-out,
     transform 200ms ease-in-out 100ms;
 }
 
-.hide {
-  height: 0;
-  opacity: 0;
-  transform: translateX(-150%);
-  transition: height 300ms ease-in-out 100ms, opacity 200ms ease-in-out 100ms,
-    transform 200ms ease-in-out;
+@media screen and (max-width: 800px) {
+  .hide {
+    height: 0;
+    opacity: 0;
+    transform: translateX(-150%);
+    transition: height 300ms ease-in-out 100ms, opacity 200ms ease-in-out 100ms,
+      transform 200ms ease-in-out;
+  }
 }
-
 @media screen and (min-width: 800px) {
   .nav {
     flex-direction: row;
     background: #333;
     height: 2em;
+    opacity: 1;
     align-self: center;
   }
 }

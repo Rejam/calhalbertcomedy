@@ -5,27 +5,30 @@ import Layout from '../components/layout'
 
 const Panto = ({ data }) => (
   <Layout>
-    <h1>Pantomime</h1>
-    <section className="images">
-      <Img fluid={data.poster.childImageSharp.fluid} />
-      <Img fluid={data.jump.childImageSharp.fluid} />
-      <Img fluid={data.dame.childImageSharp.fluid} />
-      <Img fluid={data.oz.childImageSharp.fluid} />
-      <Img fluid={data.cast.childImageSharp.fluid} />
-    </section>
-    <section>
-      <p>
-        Cal is an all round entertainer and able to adapt his act from adult
-        only to family shows! He was a member of the Award Winning Pantomime
-        'The Lambton Worm' at The Customs House, South Shields. Playing the
-        batty, wacky, silly Lord Lambton!
-      </p>
-      <p>You may have also seen Cal as The Wizard in 'The Wizard Of Oz'</p>
-      <p>
-        If you are interested in booking cal for your pantomime message him now!
-      </p>
-      <button>Message Now</button>
-    </section>
+    <main>
+      <h1>Pantomime</h1>
+      <section className="images">
+        <Img fluid={data.poster.childImageSharp.fluid} />
+        <Img fluid={data.jump.childImageSharp.fluid} />
+        <Img fluid={data.dame.childImageSharp.fluid} />
+        <Img fluid={data.oz.childImageSharp.fluid} />
+        <Img fluid={data.cast.childImageSharp.fluid} />
+      </section>
+      <section>
+        <p>
+          Cal is an all round entertainer and able to adapt his act from adult
+          only to family shows! He was a member of the Award Winning Pantomime
+          'The Lambton Worm' at The Customs House, South Shields. Playing the
+          batty, wacky, silly Lord Lambton!
+        </p>
+        <p>You may have also seen Cal as The Wizard in 'The Wizard Of Oz'</p>
+        <p>
+          If you are interested in booking cal for your pantomime message him
+          now!
+        </p>
+        <button>Message Now</button>
+      </section>
+    </main>
   </Layout>
 )
 

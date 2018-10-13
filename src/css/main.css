@@ -13,6 +13,10 @@ body {
   background-color: white;
 }
 
+main {
+  max-width: 800px;
+  margin: auto;
+}
 section {
   padding: 2em 1em 0 1em;
 }

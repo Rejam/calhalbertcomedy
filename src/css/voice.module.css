@@ -1,0 +1,18 @@
+.voice {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  min-width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .voice {
+    flex-direction: row;
+  }
+
+  .img {
+    order: 2;
+  }
+}
