@@ -1,16 +1,34 @@
-.video {
+.frame {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
   overflow: hidden;
-  max-width: 100%;
+  padding-bottom: 56.25%;
 }
-.video iframe,
-.video object,
-.video embed {
+
+.frame iframe {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+}
+
+.caption {
+  padding: 1em 1em;
+  bottom: 0;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+.video {
+  margin-bottom: 2em;
+  box-shadow: 0.2em 0.2em 1em 0.1em rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 800px) {
+  .video {
+    display: flex;
+    align-items: center;
+  }
+  .frame {
+    flex: 0 0 50%;
+    padding-bottom: 28%;
+  }
 }

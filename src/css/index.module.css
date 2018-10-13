@@ -34,10 +34,6 @@
 }
 
 .link {
-  font-family: 'Squada One', Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  padding: 0.2em 1em;
   color: #333;
   background: #fff;
   width: 70%;
@@ -68,11 +64,6 @@
   margin-bottom: 1em;
 }
 
-.article h2 {
-  font-size: 1.5em;
-  padding-bottom: 1em;
-}
-
 @media screen and (min-width: 800px) {
   .article {
     flex-direction: row;
@@ -99,6 +90,8 @@
   align-items: center;
   padding: 3em 0;
   background: #333;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .quotes > div {

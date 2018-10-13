@@ -1,0 +1,16 @@
+.text {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 4em;
+}
+
+.text p:last-of-type {
+  padding-bottom: 2em;
+}
+
+.link {
+  color: #fff;
+  background: #333;
+  padding: 0.5em 3em;
+}

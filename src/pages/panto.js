@@ -1,20 +1,23 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import style from '../css/panto.module.css'
 
 const Panto = ({ data }) => (
   <Layout>
     <main>
       <h1>Pantomime</h1>
-      <section className="images">
+      <section>
         <Img fluid={data.poster.childImageSharp.fluid} />
         <Img fluid={data.jump.childImageSharp.fluid} />
         <Img fluid={data.dame.childImageSharp.fluid} />
         <Img fluid={data.oz.childImageSharp.fluid} />
         <Img fluid={data.cast.childImageSharp.fluid} />
       </section>
-      <section>
+
+      <section className={style.text}>
         <p>
           Cal is an all round entertainer and able to adapt his act from adult
           only to family shows! He was a member of the Award Winning Pantomime
@@ -26,7 +29,9 @@ const Panto = ({ data }) => (
           If you are interested in booking cal for your pantomime message him
           now!
         </p>
-        <button>Message Now</button>
+        <Link className={style.link} to="/contact">
+          Message Now
+        </Link>
       </section>
     </main>
   </Layout>
