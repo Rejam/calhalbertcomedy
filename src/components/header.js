@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { FaBars } from 'react-icons/fa'
-import styles from '../css/header.module.css'
+import style from '../css/header.module.css'
 
 class Header extends React.Component {
   state = {
@@ -16,15 +16,12 @@ class Header extends React.Component {
     const { toggle } = this
     return (
       <div>
-        <header className={styles.header}>
-          <h1 className={styles.heading}>{siteTitle}</h1>
-          <button className={styles.menuButton} onClick={toggle}>
+        <header className={style.header}>
+          <h1 className={style.heading}>{siteTitle}</h1>
+          <button className={style.menuButton} onClick={toggle}>
             <FaBars />
           </button>
-          <nav
-            id="nav"
-            className={`${styles.nav} ${this.state.hide && styles.hide}`}
-          >
+          <nav className={`${style.nav} ${this.state.hide && style.hide}`}>
             <Link to="/">Home</Link>
             <Link to="/panto">Panto</Link>
             <Link to="/videos">Videos</Link>
