@@ -46,6 +46,6 @@
   transition: border 200ms ease-in-out;
 }
 
-nav a:hover {
+.nav a:hover {
   border-right: 1px solid white;
 }
