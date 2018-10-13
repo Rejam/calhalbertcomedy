@@ -26,7 +26,7 @@ class Header extends React.Component {
             <Link to="/panto">Panto</Link>
             <Link to="/videos">Videos</Link>
             <Link to="/voice">Voice Over</Link>
-            <Link to="/contact">Contact Me</Link>
+            <Link to="/contact">Contact</Link>
           </nav>
         </header>
       </div>

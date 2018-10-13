@@ -14,11 +14,11 @@ body {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 section {
-  padding: 2em 1em 0 1em;
+  padding: 4em 1em 0 1em;
 }
 
 h1 {
@@ -26,6 +26,7 @@ h1 {
   font-family: 'Squada One', Helvetica, sans-serif;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 1em;
 }
 
 h2 {
@@ -35,6 +36,7 @@ h2 {
 
 p {
   line-height: 140%;
+  font-size: 1.1em;
 }
 
 a {
@@ -51,4 +53,20 @@ button {
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 0.05em;
+}
+
+cite {
+  font-size: 1.7em;
+}
+
+blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+q {
+  font-size: 1.5em;
+  display: block;
 }
