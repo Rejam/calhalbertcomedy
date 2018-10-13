@@ -1,19 +1,78 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    flex-wrap: nowrap;
+  }
+}
+
 .heading {
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  flex: 1;
+  padding: 0.5em;
   text-align: left;
-  letter-spacing: 0.5px;
-  line-height: 34px;
-  font-size: 2em;
+}
+
+.menuButton {
+  padding: 0.5em;
+  border: none;
+  outline: none;
+}
+
+.menuButton:hover svg {
+  color: #777;
+}
+
+@media screen and (min-width: 800px) {
+  .menuButton {
+    display: none;
+  }
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-bottom: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: calc(100vh - 4em);
+  transition: height 300ms ease-in-out;
 }
 
-.nav > a {
-  margin: 0 1em;
-  flex: 0 1 15%;
-  white-space: nowrap;
+.hide {
+  height: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    flex-direction: row;
+    background: #333;
+    height: 2em;
+    align-self: center;
+  }
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 10vw;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  .nav a {
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+.nav a:hover {
+  background: rgba(100, 100, 100, 0.8);
 }

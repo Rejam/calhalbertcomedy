@@ -1,44 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
 
 import '../css/main.css'
 import styles from '../css/layout.module.css'
 import Header from './header'
 import Footer from './footer'
-
-const meta = [
-  { name: 'description', content: 'Sample' },
-  { name: 'keywords', content: 'sample, something' },
-]
+import icon from '../images/favicon.png'
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={({ site }) => (
-      <>
-        <Helmet title={site.siteMetadata.title} meta={meta}>
-          <html lang="en" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Lato|Squada+One"
-            rel="stylesheet"
-          />
-        </Helmet>
-        <Header siteTitle={site.siteMetadata.title} />
-        <div className={styles.layout}>{children}</div>
-        <Footer />
-      </>
-    )}
-  />
+  <>
+    <Helmet title="Cal Halbert">
+      <html lang="en" />
+      <meta name="twitter:site" content="@CalHalbert" />
+      <meta name="og:type" content="website" />
+      <meta name="og:site_name" content="Cal Halbert" />
+      <link rel="shortcut icon" type="image/png" href={icon} />
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato|Squada+One"
+        rel="stylesheet"
+      />
+    </Helmet>
+    <Header siteTitle="Cal Halbert" />
+    <div className={styles.layout}>{children}</div>
+    <Footer />
+  </>
 )
 
 Layout.propTypes = {
