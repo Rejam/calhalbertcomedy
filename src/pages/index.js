@@ -134,22 +134,51 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     heroImage: file(relativePath: { regex: "/pose_with_mic/" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
+
     entertainer: file(relativePath: { regex: "/pose_with_hands/" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
+
     taxi: file(relativePath: { regex: "/in_taxi/" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
+
     cabaret: file(relativePath: { regex: "/for_charity/" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
+
     bgt: file(relativePath: { regex: "/mimic_men/" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
+
     studio: file(relativePath: { regex: "/at_studio/" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `
