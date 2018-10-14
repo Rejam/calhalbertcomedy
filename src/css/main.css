@@ -27,6 +27,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1em;
+  letter-spacing: 0.1em;
 }
 
 h2 {
@@ -42,6 +43,7 @@ p {
   padding-bottom: 1em;
 }
 
+button,
 a {
   text-decoration: none;
   font-family: 'Squada One', Helvetica, sans-serif;
@@ -49,6 +51,8 @@ a {
   font-size: 1.2em;
   padding: 0.2em 1em;
   letter-spacing: 0.05em;
+  border: none;
+  outline: none;
 }
 
 cite {

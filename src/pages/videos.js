@@ -6,10 +6,9 @@ import style from '../css/video.module.css'
 const videos = [
   {
     id: 'ZocJahCTZy0',
-    caption:
-      'Watch Cals audition on Britains Got Talent as one half of The MimicMen',
+    caption: `Watch Cal's audition on Britain's Got Talent as one half of The MimicMen`,
   },
-  { id: 'slB1oRyifJs', caption: 'Cal calls nursery as Mrs Doubtfire' },
+  { id: 'slB1oRyifJs', caption: 'Cal calls a nursery as Mrs Doubtfire' },
   {
     id: 'yzDqDMZIjUs',
     caption: 'Cal in a promotional video for a local taxi service!',

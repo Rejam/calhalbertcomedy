@@ -7,7 +7,6 @@
 }
 
 .heading {
-  letter-spacing: 0.1em;
   white-space: nowrap;
   flex: 1;
   text-align: left;
@@ -15,11 +14,8 @@
 }
 
 .menuButton {
-  font-size: 1.5em;
   background: white;
   margin: 0 0.5em;
-  border: none;
-  outline: none;
   align-self: center;
 }
 
@@ -47,7 +43,6 @@
   color: white;
   padding-left: 10vw;
   flex: 1;
-  text-transform: uppercase;
 }
 
 .nav a:hover {
