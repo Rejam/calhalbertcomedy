@@ -3,24 +3,28 @@
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 1px solid #333;
+  font-size: 1.2em;
 }
 
 .heading {
   letter-spacing: 0.1em;
   white-space: nowrap;
   flex: 1;
-  padding: 0.5em;
   text-align: left;
+  margin: 1em 0.5em;
 }
 
 .menuButton {
-  padding: 0 0.5em;
+  font-size: 1.5em;
+  background: white;
+  margin: 0 0.5em;
   border: none;
   outline: none;
+  align-self: center;
 }
 
 .menuButton:hover svg {
-  color: #777;
+  color: hsl(260, 70%, 50%);
 }
 
 .nav {
@@ -29,7 +33,7 @@
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: calc(100vh - 4em);
+  height: calc(100vh - 6em);
   opacity: 1;
   transform: translateX(0);
   transition: height 300ms ease-in-out, opacity 300ms ease-in-out,
@@ -47,7 +51,7 @@
 }
 
 .nav a:hover {
-  background: rgba(100, 100, 100, 0.8);
+  background: hsl(260, 70%, 50%);
 }
 
 @media screen and (min-width: 700px) {

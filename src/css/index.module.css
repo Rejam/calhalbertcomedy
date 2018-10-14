@@ -24,7 +24,6 @@
 
 .caption {
   font-family: 'Squada One', Helvetica, sans-serif;
-  padding-bottom: 0.5em;
 }
 
 .subCaption {
@@ -38,6 +37,7 @@
   background: #fff;
   width: 70%;
   max-width: 250px;
+  padding: 0.5em;
 }
 
 @media screen and (min-width: 600px) {

@@ -42,9 +42,9 @@ const Voice = ({ data }) => (
             Cal offers a free demo of what you would like recording at no cost!
             Simply send him a message with all the details via the button below!
           </p>
-          <button>
-            <Link to="/contact">Request a demo</Link>
-          </button>
+          <Link className={style.button} to="/contact">
+            Request a demo
+          </Link>
         </article>
       </section>
     </main>

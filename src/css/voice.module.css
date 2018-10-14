@@ -3,16 +3,23 @@
   flex-direction: column;
 }
 
-.img {
-  min-width: 50%;
+.button {
+  background: hsl(260, 70%, 50%);
+  color: #fff;
+  padding: 0.5em 2em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .voice {
     flex-direction: row;
   }
 
   .img {
     order: 2;
+    flex: 1 0 40%;
+  }
+
+  .articles {
+    padding-right: 2em;
   }
 }

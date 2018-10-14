@@ -5,6 +5,7 @@
   align-items: center;
   height: 5em;
   padding: 0 25vw;
+  margin-top: 5em;
 }
 
 .icon {
@@ -16,7 +17,7 @@
 }
 
 .icon:hover {
-  color: #333;
+  color: hsl(260, 70%, 50%);
 }
 
 .icon > * {

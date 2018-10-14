@@ -38,11 +38,12 @@
 
 .submit {
   padding: 0.5em;
-  color: white;
-  background: #333;
   font-size: 1.5em;
   letter-spacing: 0.1em;
   font-weight: 400;
+  background: hsl(260, 70%, 50%);
+  color: #fff;
+  border: none;
 }
 
 .hpot {
