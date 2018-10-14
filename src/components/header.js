@@ -18,7 +18,11 @@ class Header extends React.Component {
       <div>
         <header className={style.header}>
           <h1 className={style.heading}>{siteTitle}</h1>
-          <button className={style.menuButton} onClick={toggle}>
+          <button
+            className={style.menuButton}
+            onClick={toggle}
+            aria-label="menu toggle"
+          >
             <FaBars />
           </button>
           <nav className={`${style.nav} ${this.state.hide && style.hide}`}>
