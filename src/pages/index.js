@@ -10,7 +10,7 @@ export default ({ data }) => (
   <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <meta description="Find out more info about Cal Halbert" />
+      <meta name="Description" content="Find out more info about Cal Halbert" />
       <title>Cal Halbert: About</title>
       <link rel="canonical" href="https://calhalbertcomedy.co.uk" />
     </Helmet>

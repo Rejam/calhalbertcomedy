@@ -8,7 +8,10 @@ const Contact = () => (
     <main>
       <Helmet>
         <meta charSet="utf-8" />
-        <meta description="Contact Cal Halbert. Get in touch with Cal and send him a message." />
+        <meta
+          name="Description"
+          content="Contact Cal Halbert. Get in touch with Cal and send him a message."
+        />
         <title>Cal Halbert: Contact</title>
         <link rel="canonical" href="https://calhalbertcomedy.co.uk/contact" />
       </Helmet>

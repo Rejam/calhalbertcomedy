@@ -20,7 +20,10 @@ export default () => {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <meta description="Watch some of the videos that Cal has been in or created." />
+        <meta
+          name="Description"
+          content="Watch some of the videos that Cal has been in or created."
+        />
         <title>Cal Halbert: Videos</title>
         <link rel="canonical" href="https://calhalbertcomedy.co.uk/videos" />
       </Helmet>

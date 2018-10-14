@@ -10,7 +10,10 @@ const Panto = ({ data }) => (
   <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <meta description="Check out the panto's that Cal has been in." />
+      <meta
+        name="Description"
+        content="Check out the panto's that Cal has been in."
+      />
       <title>Cal Halbert: Panto</title>
       <link rel="canonical" href="https://calhalbertcomedy.co.uk/panto" />
     </Helmet>

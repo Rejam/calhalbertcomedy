@@ -11,7 +11,10 @@ const Voice = ({ data }) => (
   <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <meta description="Check out some of the voice over work that Cal has done." />
+      <meta
+        name="Description"
+        content="Check out some of the voice over work that Cal has done."
+      />
       <title>Cal Halbert: Voice Over</title>
       <link rel="canonical" href="https://calhalbertcomedy.co.uk/voice" />
     </Helmet>
