@@ -1,12 +1,19 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import style from '../css/panto.module.css'
 
 const Panto = ({ data }) => (
   <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <meta description="Check out the panto's that Cal has been in." />
+      <title>Cal Halbert: Panto</title>
+      <link rel="canonical" href="https://calhalbertcomedy.co.uk/panto" />
+    </Helmet>
     <main>
       <h1>Pantomime</h1>
       <section>

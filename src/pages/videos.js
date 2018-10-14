@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import style from '../css/video.module.css'
@@ -17,6 +18,12 @@ const videos = [
 export default () => {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta description="Watch some of the videos that Cal has been in or created." />
+        <title>Cal Halbert: Videos</title>
+        <link rel="canonical" href="https://calhalbertcomedy.co.uk/videos" />
+      </Helmet>
       <main>
         <section>
           <h1>Videos</h1>

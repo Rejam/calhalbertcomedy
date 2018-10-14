@@ -2,11 +2,18 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Helmet from 'react-helmet'
 
 import style from '../css/index.module.css'
 
 export default ({ data }) => (
   <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <meta description="Find out more info about Cal Halbert" />
+      <title>Cal Halbert: About</title>
+      <link rel="canonical" href="https://calhalbertcomedy.co.uk" />
+    </Helmet>
     <header className={style.hero}>
       <Img
         imgStyle={{ objectPosition: '50% 10%' }}

@@ -1,11 +1,17 @@
 import React from 'react'
-
+import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import style from '../css/contact.module.css'
 
 const Contact = () => (
   <Layout>
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta description="Contact Cal Halbert. Get in touch with Cal and send him a message." />
+        <title>Cal Halbert: Contact</title>
+        <link rel="canonical" href="https://calhalbertcomedy.co.uk/contact" />
+      </Helmet>
       <section>
         <h1>Drop us a Message!</h1>
         <form

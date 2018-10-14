@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
@@ -8,6 +9,12 @@ import style from '../css/voice.module.css'
 
 const Voice = ({ data }) => (
   <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <meta description="Check out some of the voice over work that Cal has done." />
+      <title>Cal Halbert: Voice Over</title>
+      <link rel="canonical" href="https://calhalbertcomedy.co.uk/voice" />
+    </Helmet>
     <main className={style.voice}>
       <section className={style.img}>
         <Img
