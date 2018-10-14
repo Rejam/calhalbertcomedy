@@ -10,8 +10,7 @@ const NotFoundPage = () => (
         name="Description"
         content="Check out some of the voice over work that Cal has done."
       />
-      <title>Cal Halbert: Voice Over</title>
-      <link rel="canonical" href="https://calhalbertcomedy.co.uk/voice" />
+      <title>Cal Halbert: Page not found</title>
     </Helmet>
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
