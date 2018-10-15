@@ -16,10 +16,10 @@ const Layout = ({ children }) => {
     { text: 'Voice Over', path: 'voice' },
     { text: 'Contact', path: 'contact' },
   ]
-  const pathname = (typeof window !== 'undefined'
-    ? window.location.pathname
-    : null
-  ).replace(/[/]/g, '')
+  const pathname =
+    typeof window !== 'undefined'
+      ? window.location.pathname.replace(/[/]/g, '')
+      : null
 
   return (
     <>
