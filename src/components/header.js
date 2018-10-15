@@ -12,8 +12,10 @@ class Header extends React.Component {
   toggle = () => this.setState(({ show }) => ({ show: !show }))
 
   render() {
-    const { siteTitle } = this.props
+    const { pathname } = window.location
+    const { siteTitle, routes } = this.props
     const { toggle } = this
+    const { show } = this.state
     return (
       <div>
         <header className={style.header}>
@@ -25,12 +27,16 @@ class Header extends React.Component {
           >
             <FaBars />
           </button>
-          <nav className={`${style.nav} ${this.state.show ? style.show : ''}`}>
-            <Link to="/">Home</Link>
-            <Link to="/panto">Panto</Link>
-            <Link to="/videos">Videos</Link>
-            <Link to="/voice">Voice Over</Link>
-            <Link to="/contact">Contact</Link>
+          <nav className={`${style.nav} ${show ? style.show : ''}`}>
+            {routes.map(r => (
+              <Link
+                key={r.path}
+                to={r.path}
+                className={r.path === pathname ? style.active : ''}
+              >
+                {r.text}
+              </Link>
+            ))}
           </nav>
         </header>
       </div>

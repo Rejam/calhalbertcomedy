@@ -48,11 +48,25 @@
   .heroImg {
     max-height: 400px;
   }
-  .heroInfo {
-    flex: 1 1 40%;
-    margin: auto;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .heroImg {
+    max-height: 500px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
 /* Main */
 .article {
   display: flex;

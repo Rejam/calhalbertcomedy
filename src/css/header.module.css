@@ -3,7 +3,6 @@
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
-  border-bottom: 1px solid #333;
   font-size: 1.2em;
 }
 
@@ -25,6 +24,7 @@
 }
 
 .nav {
+  background: #333;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -37,7 +37,6 @@
 }
 
 .nav a {
-  background: #333;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -77,4 +76,8 @@
   .show {
     transform: scaleY(1);
   }
+}
+
+.active {
+  background: hsl(260, 70%, 50%);
 }

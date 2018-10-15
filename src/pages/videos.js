@@ -32,12 +32,13 @@ export default () => {
           <h1>Videos</h1>
           <div>
             {videos.map(({ id, caption }) => (
-              <figure className={style.video}>
+              <figure key={id} className={style.video}>
                 <article className={style.frame}>
                   <iframe
+                    title={id}
                     src={`https://www.youtube.com/embed/${id}`}
-                    frameborder="0"
-                    allowfullscreen
+                    frameBorder="0"
+                    allowFullScreen
                   />
                 </article>
                 <figcaption className={style.caption}>{caption}</figcaption>
