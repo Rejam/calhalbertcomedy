@@ -12,7 +12,11 @@ class Header extends React.Component {
   toggle = () => this.setState(({ show }) => ({ show: !show }))
 
   render() {
-    const pathname = window ? window.location.pathname : null
+    try {
+      const { pathname } = window.location
+    } catch (e) {
+      const pathname = null
+    }
     const { siteTitle, routes } = this.props
     const { toggle } = this
     const { show } = this.state
