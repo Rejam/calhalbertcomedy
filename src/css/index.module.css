@@ -31,6 +31,7 @@
   font-size: 1.2em;
   color: rgba(255, 255, 255, 0.5);
   padding-bottom: 1em;
+  letter-spacing: 0.05em;
 }
 
 .link {
@@ -58,12 +59,18 @@
   .heroImg {
     max-height: 500px;
   }
+  .heroInfo {
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding-left: 15vw;
     padding-right: 15vw;
+  }
+  .heroInfo {
+    font-size: 1.2em;
   }
 }
 
