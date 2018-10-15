@@ -16,6 +16,8 @@ const Layout = ({ children }) => {
     { text: 'Voice Over', path: '/voice' },
     { text: 'Contact', path: '/contact' },
   ]
+  const pathname =
+    typeof window !== 'undefined' ? window.location.pathname : null
 
   return (
     <>
@@ -30,7 +32,7 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Helmet>
-      <Header siteTitle="Cal Halbert" routes={routes} />
+      <Header siteTitle="Cal Halbert" routes={routes} pathname={pathname} />
       <Social />
       <div>{children}</div>
       <Footer />
