@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   const pathname =
     typeof window !== 'undefined'
       ? window.location.pathname.replace(/[/]/g, '')
-      : null
+      : ''
 
   return (
     <>

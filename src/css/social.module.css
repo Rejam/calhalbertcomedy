@@ -1,5 +1,5 @@
 .social {
-  background: hsl(260, 70%, 50%);
+  background: rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,7 +10,8 @@
 .icon {
   padding: 0;
   font-size: 2em;
-  color: white;
+  color: hsl(260, 70%, 50%);
+  background: transparent;
   transition: transform 200ms ease-in-out;
 }
 
@@ -19,11 +20,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .icon {
-    font-size: 2em;
-    color: white;
-    transition: transform 200ms ease-in-out;
-  }
   .social {
     padding: 1em 30vw;
   }

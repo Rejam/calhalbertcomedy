@@ -33,8 +33,12 @@ export default ({ data }) => (
       <section>
         <h1>About Cal Halbert</h1>
         <article className={style.article}>
-          <Img fluid={data.entertainer.childImageSharp.fluid} />
-          <div>
+          <Img
+            className={style.img}
+            imgStyle={{ objectFit: 'cover' }}
+            fluid={data.entertainer.childImageSharp.fluid}
+          />
+          <div className={style.text}>
             <h2>A Versatile Entertainer</h2>
             <p>
               Impressionist, Comedian, Actor, Host and Voice Over Artiste — Cal
@@ -48,10 +52,10 @@ export default ({ data }) => (
 
         <article className={style.article}>
           <Img
-            className={style.imgOdd}
+            className={`${style.img} ${style.odd}`}
             fluid={data.taxi.childImageSharp.fluid}
           />
-          <div>
+          <div className={style.text}>
             <h2>A Proven Track Record</h2>
             <p>
               Maybe you are looking for an entertainer for a birthday party or
@@ -66,8 +70,11 @@ export default ({ data }) => (
         </article>
 
         <article className={style.article}>
-          <Img fluid={data.cabaret.childImageSharp.fluid} />
-          <div>
+          <Img
+            className={style.img}
+            fluid={data.cabaret.childImageSharp.fluid}
+          />
+          <div className={style.text}>
             <h2>Charity Work</h2>
             <p>
               Cal tries to do as much as he can for charity but as you can
@@ -84,8 +91,8 @@ export default ({ data }) => (
       <section className={style.testimonials}>
         <h1>Testimonials</h1>
         <article className={style.article}>
-          <Img fluid={data.bgt.childImageSharp.fluid} />
-          <div>
+          <Img className={style.img} fluid={data.bgt.childImageSharp.fluid} />
+          <div className={style.text}>
             <cite>David Walliams - Author, Actor, Presenter</cite>
             <blockquote>
               Brilliant- Some really original impressions in there, some I've
@@ -95,10 +102,10 @@ export default ({ data }) => (
         </article>
         <article className={style.article}>
           <Img
-            className={style.imgOdd}
+            className={`${style.img} ${style.odd}`}
             fluid={data.studio.childImageSharp.fluid}
           />
-          <div>
+          <div className={style.text}>
             <cite>Elliot Clarke - MD at Clear and Loud PA Hire</cite>
             <blockquote>
               Cal is professional, skilled, slick, and not easily phased by any
@@ -131,51 +138,27 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     heroImage: file(relativePath: { regex: "/pose_with_mic/" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
 
     entertainer: file(relativePath: { regex: "/pose_with_hands/" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
 
     taxi: file(relativePath: { regex: "/in_taxi/" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
 
     cabaret: file(relativePath: { regex: "/for_charity/" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
 
     bgt: file(relativePath: { regex: "/mimic_men/" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
 
     studio: file(relativePath: { regex: "/at_studio/" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
   }
 `

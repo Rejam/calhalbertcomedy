@@ -1,4 +1,5 @@
 .header {
+  background-color: #fefefe;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -13,7 +14,7 @@
 }
 
 .menuButton {
-  background: white;
+  background: transparent;
   margin: 0 0.5em;
   align-self: center;
   cursor: pointer;
