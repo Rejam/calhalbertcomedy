@@ -6,10 +6,10 @@ import style from '../css/header.module.css'
 
 class Header extends React.Component {
   state = {
-    hide: true,
+    show: false,
   }
 
-  toggle = () => this.setState(({ hide }) => ({ hide: !hide }))
+  toggle = () => this.setState(({ show }) => ({ show: !show }))
 
   render() {
     const { siteTitle } = this.props
@@ -25,7 +25,7 @@ class Header extends React.Component {
           >
             <FaBars />
           </button>
-          <nav className={`${style.nav} ${this.state.hide && style.hide}`}>
+          <nav className={`${style.nav} ${this.state.show ? style.show : ''}`}>
             <Link to="/">Home</Link>
             <Link to="/panto">Panto</Link>
             <Link to="/videos">Videos</Link>
