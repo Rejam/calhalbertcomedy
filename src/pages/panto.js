@@ -19,13 +19,6 @@ const Panto = ({ data }) => (
     </Helmet>
     <main>
       <h1>Pantomime</h1>
-      <section>
-        <Img fluid={data.poster.childImageSharp.fluid} />
-        <Img fluid={data.jump.childImageSharp.fluid} />
-        <Img fluid={data.dame.childImageSharp.fluid} />
-        <Img fluid={data.oz.childImageSharp.fluid} />
-        <Img fluid={data.cast.childImageSharp.fluid} />
-      </section>
 
       <section className={style.text}>
         <p>
@@ -42,6 +35,13 @@ const Panto = ({ data }) => (
         <Link className={style.link} to="/contact">
           Message Now
         </Link>
+      </section>
+      <section>
+        <Img fluid={data.poster.childImageSharp.fluid} />
+        <Img fluid={data.jump.childImageSharp.fluid} />
+        <Img fluid={data.dame.childImageSharp.fluid} />
+        <Img fluid={data.oz.childImageSharp.fluid} />
+        <Img fluid={data.cast.childImageSharp.fluid} />
       </section>
     </main>
   </Layout>
