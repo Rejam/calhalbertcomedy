@@ -36,12 +36,12 @@ const Panto = ({ data }) => (
           Message Now
         </Link>
       </section>
-      <section>
-        <Img fluid={data.poster.childImageSharp.fluid} />
-        <Img fluid={data.jump.childImageSharp.fluid} />
-        <Img fluid={data.dame.childImageSharp.fluid} />
-        <Img fluid={data.oz.childImageSharp.fluid} />
-        <Img fluid={data.cast.childImageSharp.fluid} />
+      <section className={style.gallery}>
+        <Img className={style.tall} fluid={data.poster.childImageSharp.fluid} />
+        <Img className={style.tall} fluid={data.dame.childImageSharp.fluid} />
+        <Img className={style.tall} fluid={data.jump.childImageSharp.fluid} />
+        <Img className={style.wide} fluid={data.oz.childImageSharp.fluid} />
+        <Img className={style.wide} fluid={data.cast.childImageSharp.fluid} />
       </section>
     </main>
   </Layout>

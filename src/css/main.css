@@ -54,6 +54,8 @@ a {
   letter-spacing: 0.05em;
   border: none;
   outline: none;
+  background: hsl(260, 70%, 50%);
+  color: white;
 }
 
 cite {

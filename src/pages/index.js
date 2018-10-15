@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 
@@ -26,9 +26,6 @@ export default ({ data }) => (
         <h2 className={style.subCaption}>
           One of the UK's Top All Round Entertainers
         </h2>
-        <Link className={style.link} to="/contact">
-          Book Cal Now
-        </Link>
       </div>
     </header>
 

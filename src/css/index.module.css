@@ -3,7 +3,7 @@
 .hero {
   display: flex;
   flex-direction: column;
-  background: #000;
+  background: #333;
 }
 .heroImg {
   display: flex;
@@ -29,14 +29,12 @@
 
 .subCaption {
   font-size: 1.2em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   padding-bottom: 1em;
   letter-spacing: 0.05em;
 }
 
 .link {
-  color: #333;
-  background: #fff;
   width: 70%;
   max-width: 250px;
   padding: 0.5em;

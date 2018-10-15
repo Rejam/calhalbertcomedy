@@ -10,14 +10,16 @@ import icon from '../images/favicon.png'
 
 const Layout = ({ children }) => {
   const routes = [
-    { text: 'Home', path: '/' },
-    { text: 'Panto', path: '/panto' },
-    { text: 'Videos', path: '/videos' },
-    { text: 'Voice Over', path: '/voice' },
-    { text: 'Contact', path: '/contact' },
+    { text: 'Home', path: '' },
+    { text: 'Panto', path: 'panto' },
+    { text: 'Videos', path: 'videos' },
+    { text: 'Voice Over', path: 'voice' },
+    { text: 'Contact', path: 'contact' },
   ]
-  const pathname =
-    typeof window !== 'undefined' ? window.location.pathname : null
+  const pathname = (typeof window !== 'undefined'
+    ? window.location.pathname
+    : null
+  ).replace(/[/]/g, '')
 
   return (
     <>

@@ -17,6 +17,7 @@
   margin: 0 0.5em;
   align-self: center;
   cursor: pointer;
+  color: #333;
 }
 
 .menuButton:hover svg {
@@ -24,7 +25,6 @@
 }
 
 .nav {
-  background: #333;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -37,13 +37,15 @@
 }
 
 .nav a {
+  background: #333;
+
   display: flex;
   flex: 1;
   justify-content: center;
   font-size: 1.5em;
   padding: 1em;
   color: white;
-  transition: background-color 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
 }
 
 .nav a:hover {
@@ -78,6 +80,6 @@
   }
 }
 
-.active {
+.nav .active {
   background: hsl(260, 70%, 50%);
 }

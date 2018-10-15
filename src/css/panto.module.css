@@ -10,7 +10,35 @@
 }
 
 .link {
-  color: #fff;
-  background: #333;
   padding: 0.5em 3em;
+}
+
+img {
+  margin: 1em;
+  box-shadow: 1em 1em 0.5em 1em rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tall {
+    flex: 1 1 50%;
+  }
+
+  .wide {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .tall {
+    flex: 1 1 33%;
+  }
+  .wide {
+    flex: 1 1 50%;
+  }
 }
