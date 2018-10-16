@@ -43,7 +43,7 @@
   }
 }
 
-/* @supports (display: grid) {
+@supports (display: grid) {
   .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -79,4 +79,4 @@
       grid-column: span 3;
     }
   }
-} */
+}
