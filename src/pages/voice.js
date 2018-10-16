@@ -35,8 +35,8 @@ const Voice = ({ data }) => (
             <p>
               You may recognise Cal's voice as the 'voice of the station' at
               LoveSport Radio. The London sports station has several highly
-              acclaimed sports stars hosting shows including Olimpic Sprinter
-              Iwan Thomas MBE and Former England and Lions Rugby Player Brain
+              acclaimed sports stars hosting shows including Olympic Sprinter
+              Iwan Thomas MBE and Former England and Lions Rugby Player Brian
               Moore!
             </p>
           </article>

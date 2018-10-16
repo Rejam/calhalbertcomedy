@@ -41,8 +41,8 @@ export default ({ data }) => (
           <div className={style.text}>
             <h2>A Versatile Entertainer</h2>
             <p>
-              Impressionist, Comedian, Actor, Host and Voice Over Artiste — Cal
-              Halbert is one half of 'The Mimic Men'. The UK's only
+              Impressionist, Comedian, Actor, Host and Voice Over Artist. Cal
+              Halbert is also one half of 'The Mimic Men'. The UK's only
               impressionist double act! Performing on Britain's Got Talent in
               2016 and gaining four yeses accompanied by a standing ovation by
               the judges, audience and Ant and Dec.
@@ -60,10 +60,10 @@ export default ({ data }) => (
             <p>
               Maybe you are looking for an entertainer for a birthday party or
               wedding. Or maybe you are looking for an on-stage emcee for your
-              next sales meeting or awards ceremony. With previous clients
-              including Audi, Santander, BBC, ITV and YouTube. Corporate holiday
-              parties, and local private parties, Cal Halbert's high-energy
-              interactive entertainment is sure to bring — not just fun — but
+              next sales meeting or awards ceremony. Cal has worked with Audi,
+              Santander, BBC, ITV and YouTube. Corporate holiday parties, and
+              local private parties, Cal Halbert's high-energy interactive
+              entertainment is sure to bring — not just fun — but
               professionalism and experience to your event.
             </p>
           </div>
@@ -79,8 +79,8 @@ export default ({ data }) => (
             <p>
               Cal tries to do as much as he can for charity but as you can
               imagine he gets asked to do numerous events and its always down to
-              his availability! Right you can see Cal along side Betty Bloomers,
-              Chris Cross and Nat Lunatrick after their cabaret show they
+              his availability! Here you can see Cal along side Betty Bloomers,
+              Chris Cross and Nat Lunatrick after the cabaret show they
               performed for the homeless charity Crisis in Newcastle on
               Christmas Day! (Told you its always down to availability!)
             </p>

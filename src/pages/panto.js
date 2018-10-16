@@ -29,7 +29,7 @@ const Panto = ({ data }) => (
         </p>
         <p>You may have also seen Cal as The Wizard in 'The Wizard Of Oz'</p>
         <p>
-          If you are interested in booking cal for your pantomime message him
+          If you are interested in booking Cal for your pantomime message him
           now!
         </p>
         <Link className={style.link} to="/contact">
