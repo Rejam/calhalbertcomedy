@@ -30,7 +30,9 @@ h1 {
   margin-bottom: 1em;
   letter-spacing: 0.1em;
 }
-
+article {
+  margin-bottom: 1em;
+}
 h2 {
   font-size: 1.3em;
   letter-spacing: -0.05em;
