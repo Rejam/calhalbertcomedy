@@ -96,7 +96,7 @@ export default ({ data }) => (
             <cite>David Walliams - Author, Actor, Presenter</cite>
             <blockquote>
               Brilliant- Some really original impressions in there, some I've
-              never seen be done before - You guys are brilliant''
+              never seen be done before - You guys are brilliant
             </blockquote>
           </div>
         </article>
