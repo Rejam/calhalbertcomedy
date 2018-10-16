@@ -9,7 +9,7 @@ module.exports = {
         background_color: '#333',
         theme_color: '#333',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.svg',
+        icon: 'src/images/cal_icon.svg',
       },
     },
     {
