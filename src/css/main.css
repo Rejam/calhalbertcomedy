@@ -9,9 +9,7 @@ html {
 }
 body {
   color: #333;
-  /* background: white; */
   background: linear-gradient(180deg, #fafafa 0%, #f1f1f1 100%);
-
   font-size: 0.9em;
 }
 

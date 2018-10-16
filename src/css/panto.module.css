@@ -14,7 +14,7 @@
 }
 
 .gallery img {
-  margin: 1em;
+  margin: 1em 0;
   box-shadow: 1em 1em 0.5em 1em rgba(0, 0, 0, 0.2);
 }
 
