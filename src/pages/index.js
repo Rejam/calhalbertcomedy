@@ -11,6 +11,7 @@ export default ({ data }) => (
     <Helmet>
       <meta charSet="utf-8" />
       <meta name="Description" content="Find out more info about Cal Halbert" />
+      <meta name="google-site-verification" content="6Fv7AczuZweGLQarjAL64RF0i4ehUGgHX6y3rzKQK9s" />
       <title>Cal Halbert: About</title>
       <link rel="canonical" href="https://calhalbertcomedy.co.uk" />
     </Helmet>
