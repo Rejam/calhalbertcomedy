@@ -11,6 +11,12 @@
   padding: 0;
 }
 
-.foot a {
-  color: white;
+.foot .simpleLink {
+  font-family: Lato, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-transform: inherit;
+  font-size: inherit;
+  padding: 0;
+  letter-spacing: inherit;
+  background: none;
 }
