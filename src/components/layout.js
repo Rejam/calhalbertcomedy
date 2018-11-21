@@ -34,10 +34,12 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Helmet>
-      <Header siteTitle="Cal Halbert" routes={routes} pathname={pathname} />
-      <Social />
-      <div>{children}</div>
-      <Footer />
+      <div className="flex">    
+        <Header siteTitle="Cal Halbert" routes={routes} pathname={pathname} />
+        <Social />
+        <div className="content">{children}</div>
+        <Footer />
+      </div>
     </>
   )
 }

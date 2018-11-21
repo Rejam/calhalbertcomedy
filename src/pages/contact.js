@@ -61,7 +61,7 @@ const Contact = () => (
               name="message"
               id="message"
               cols="30"
-              rows="10"
+              rows="8"
               required
             />
           </div>
