@@ -12,7 +12,7 @@ const Panto = ({ data }) => (
       <meta charSet="utf-8" />
       <meta
         name="Description"
-        content="Check out the panto's that Cal has been in."
+        content="Check out the Cal's panto pics!."
       />
       <title>Cal Halbert: Panto</title>
       <link rel="canonical" href="https://calhalbertcomedy.co.uk/panto" />
@@ -37,11 +37,29 @@ const Panto = ({ data }) => (
         </Link>
       </section>
       <section className={style.gallery}>
-        <Img className={style.tall} fluid={data.poster.childImageSharp.fluid} />
-        <Img className={style.tall} fluid={data.dame.childImageSharp.fluid} />
-        <Img className={style.tall} fluid={data.jump.childImageSharp.fluid} />
-        <Img className={style.wide} fluid={data.oz.childImageSharp.fluid} />
-        <Img className={style.wide} fluid={data.cast.childImageSharp.fluid} />
+        <Img
+          className={style.tall}
+          fluid={data.rapunzel.childImageSharp.fluid}
+          alt="Cal dressed as the Henchman for Rapunzel 2019" />
+        <Img
+          className={style.tall}
+          fluid={data.poster.childImageSharp.fluid}
+          alt="Cal as the Wizard in The Wizard of Oz poster" />
+        <Img
+          className={style.wide}
+          fluid={data.oz.childImageSharp.fluid}
+          alt="Cal performing in The Wizard of Oz" />
+        <Img className={style.tall} 
+          fluid={data.jump.childImageSharp.fluid} 
+          alt="Cal as Lord Lambton in The Lambton Worm" />
+        <Img 
+          className={style.wide} 
+          fluid={data.cast.childImageSharp.fluid} 
+          alt="Cal with the cast of The Lambton Worm" />
+        <Img 
+          className={style.tall} 
+          fluid={data.dame.childImageSharp.fluid} 
+          alt="Cal as Lord Lambton in The Lambton Worm posing with the Dame" />
       </section>
     </main>
   </Layout>
@@ -49,6 +67,9 @@ const Panto = ({ data }) => (
 
 export const query = graphql`
   query {
+    rapunzel: file(relativePath: { regex: "/rapunzel/" }) {
+      ...fluidImage
+    }
     cast: file(relativePath: { regex: "/lampton_cast/" }) {
       ...fluidImage
     }
