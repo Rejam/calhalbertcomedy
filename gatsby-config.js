@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://calhalbertcomedy.co.uk`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
@@ -23,5 +26,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    `gatsby-plugin-sitemap`
   ],
 }
