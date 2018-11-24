@@ -29,10 +29,6 @@ const Layout = ({ children }) => {
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Cal Halbert" />
         <link rel="shortcut icon" type="image/png" href={icon} />
-        <link
-          href="https://fonts.googleapis.com/css?family=Lato|Squada+One"
-          rel="stylesheet"
-        />
       </Helmet>
       <div className="flex">    
         <Header siteTitle="Cal Halbert" routes={routes} pathname={pathname} />
