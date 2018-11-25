@@ -26,7 +26,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Lato', 'Squada One']
+          families: ['Squada One']
         }
       }
     },
