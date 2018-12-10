@@ -7,7 +7,7 @@ export default () => {
     <div>
       <div className={style.foot}>
         <div>
-          <p>Copyright © 2018 Cal Halbert</p>
+          <p>Copyright © 2018 Cal Halbert. Member of the Calbert Media Group.</p>
           <p>
             Created by{' '}
             <a
