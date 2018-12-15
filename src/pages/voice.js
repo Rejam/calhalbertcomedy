@@ -44,8 +44,7 @@ const Voice = ({ data }) => (
             <h2>Get Your Voice Right</h2>
             <p>
               Cal has provided voice overs for everything from YouTube Videos to
-              Hair Loss Products and even West Ham United. He is adaptable and
-              passionate about you receiving your perfect company voice.
+              Hair Loss Products and even West Ham United. He is adaptable and passionate about you receiving the perfect voice for your company.
             </p>
           </article>
           <article>
