@@ -40,26 +40,35 @@ const Panto = ({ data }) => (
         <Img
           className={style.tall}
           fluid={data.rapunzel.childImageSharp.fluid}
-          alt="Cal dressed as the Henchman for Rapunzel 2019" />
-        <Img
-          className={style.tall}
-          fluid={data.poster.childImageSharp.fluid}
-          alt="Cal as the Wizard in The Wizard of Oz poster" />
-        <Img
-          className={style.wide}
-          fluid={data.oz.childImageSharp.fluid}
-          alt="Cal performing in The Wizard of Oz" />
-        <Img className={style.tall} 
-          fluid={data.jump.childImageSharp.fluid} 
-          alt="Cal as Lord Lambton in The Lambton Worm" />
+          alt="Henchman for Rapunzel 2019" />
         <Img 
           className={style.wide} 
           fluid={data.cast.childImageSharp.fluid} 
-          alt="Cal with the cast of The Lambton Worm" />
+          alt="The cast of The Wizard of Oz" />
+        <Img
+          className={style.wide}
+          fluid={data.mystic.childImageSharp.fluid}
+          alt="Lord Lampton front of cloth" />
+        <Img
+          className={style.tall}
+          fluid={data.jump.childImageSharp.fluid}
+          alt="Lord Lambton in The Lambton Worm" />
+        <Img
+          className={style.tall} 
+          fluid={data.lampton.childImageSharp.fluid} 
+          alt="Cal performing in The Lampton Worm" />
+        <Img 
+          className={style.wide} 
+          fluid={data.wizard.childImageSharp.fluid} 
+          alt="Cal as the wizard of Oz" />
+        <Img 
+          className={style.wide} 
+          fluid={data.finale.childImageSharp.fluid} 
+          alt="Wizard of Oz finale" />
         <Img 
           className={style.tall} 
-          fluid={data.dame.childImageSharp.fluid} 
-          alt="Cal as Lord Lambton in The Lambton Worm posing with the Dame" />
+          fluid={data.game.childImageSharp.fluid} 
+          alt="Wizard of Oz comedy set piece" />
       </section>
     </main>
   </Layout>
@@ -70,19 +79,25 @@ export const query = graphql`
     rapunzel: file(relativePath: { regex: "/rapunzel/" }) {
       ...fluidImage
     }
-    cast: file(relativePath: { regex: "/lampton_cast/" }) {
+    mystic: file(relativePath: { regex: "/lampton_mystic/" }) {
       ...fluidImage
     }
     jump: file(relativePath: { regex: "/lampton_jump/" }) {
       ...fluidImage
     }
-    dame: file(relativePath: { regex: "/with_dame/" }) {
+    lampton: file(relativePath: { regex: "/lampton_welcome/" }) {
       ...fluidImage
     }
-    poster: file(relativePath: { regex: "/wizard_poster/" }) {
+    cast: file(relativePath: { regex: "/woo_cast/" }) {
       ...fluidImage
     }
-    oz: file(relativePath: { regex: "/wizard_of_oz/" }) {
+    finale: file(relativePath: { regex: "/woo_finale/" }) {
+      ...fluidImage
+    }
+    game: file(relativePath: { regex: "/woo_game/" }) {
+      ...fluidImage
+    }
+    wizard: file(relativePath: { regex: "/woo_wizard/" }) {
       ...fluidImage
     }
   }
