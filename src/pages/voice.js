@@ -39,14 +39,12 @@ const Voice = ({ data }) => {
           </section>
 
           <section className={style.articles}>
-            <div dangerouslySetInnerHTML={{ __html: soundcloud.soundcloud }} />
-            <div>{documentToReactComponents(content.json)}</div>
-            <h2>Ask for a Demo</h2>
-            <p>
-              Cal offers a free demo of what you would like recording at no
-              cost! Simply send him a message with all the details via the
-              button below!
-            </p>
+            {soundcloud && (
+              <div
+                dangerouslySetInnerHTML={{ __html: soundcloud.soundcloud }}
+              />
+            )}
+            {documentToReactComponents(content.json)}
             <Link className={style.button} to="/contact">
               Request a demo
             </Link>
