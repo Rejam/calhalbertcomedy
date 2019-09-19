@@ -1,6 +1,5 @@
 .text {
   text-align: center;
-  /* max-width: 600px; */
   margin: auto;
   padding-bottom: 4em;
 }
@@ -52,7 +51,6 @@
   }
   @media screen and (min-width: 600px) {
     .gallery {
-      grid-template-rows: repeat(3, auto);
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -63,17 +61,19 @@
 
   @media screen and (min-width: 800px) {
     .gallery {
-      grid-template-rows: repeat(2, auto);
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(7, 1fr);
+      grid-auto-rows: 1fr;
       grid-gap: 1em;
     }
 
     .tall {
-      grid-column: span 2;
+      grid-column: span 3;
+      grid-row: span 4;
     }
 
     .wide {
       grid-column: span 4;
+      grid-row: span 2;
     }
   }
 }
