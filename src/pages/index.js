@@ -11,7 +11,10 @@ export default ({ data }) => (
     <Helmet>
       <meta charSet="utf-8" />
       <meta name="Description" content="Find out more info about Cal Halbert" />
-      <meta name="google-site-verification" content="6Fv7AczuZweGLQarjAL64RF0i4ehUGgHX6y3rzKQK9s" />
+      <meta
+        name="google-site-verification"
+        content="6Fv7AczuZweGLQarjAL64RF0i4ehUGgHX6y3rzKQK9s"
+      />
       <title>Cal Halbert: About</title>
       <link rel="canonical" href="https://calhalbertcomedy.co.uk" />
     </Helmet>
@@ -29,6 +32,23 @@ export default ({ data }) => (
         </h2>
       </div>
     </header>
+
+    <div className={style.as_seen_on}>
+      <span className={style.as_seen_on__text}>As seen on</span>
+      <div className={style.as_seen_on__logos}>
+        {data.logos.nodes.map(({ childImageSharp: logo }) => {
+          return (
+            <Img
+              key={logo.id}
+              className={style.logos__logo}
+              fluid={logo.fluid}
+              imgStyle={{ objectFit: 'contain' }}
+              alt="logo"
+            />
+          )
+        })}
+      </div>
+    </div>
 
     <main>
       <section>
@@ -138,6 +158,17 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
+    logos: allFile(filter: { relativeDirectory: { eq: "logos" } }) {
+      nodes {
+        childImageSharp {
+          id
+          fluid(maxHeight: 50) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+
     heroImage: file(relativePath: { regex: "/pose_with_mic/" }) {
       ...fluidImage
     }
