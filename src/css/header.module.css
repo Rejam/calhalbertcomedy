@@ -53,6 +53,17 @@
   background: hsl(260, 70%, 50%);
 }
 
+.banner {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+  text-decoration: underline;
+}
+a.banner:hover {
+  background: hsl(260, 100%, 50%);
+}
+
 @media screen and (min-width: 700px) {
   .nav {
     position: static;

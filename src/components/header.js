@@ -38,6 +38,11 @@ class Header extends React.Component {
             ))}
           </nav>
         </header>
+        <div>
+          <a href="http://www.calscomedyclub.com" className={style.banner}>
+            Cal's Comedy Club
+          </a>
+        </div>
       </div>
     )
   }
